@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
-        <img src="" alt="">
-        <nav>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+        <nav class="navbar">
+            <div class="logo"><img src="" alt=""></div>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
         </nav>
         <main class="main">
-            <input type="text" class="entrada">
-            <select name="" id="">
-                <option value="null"></option>
-                <option value="">Alura</option>
-                <option value="">Transposición</option>
-                <option value="">Sustitución</option>
-                <option value="">César</option>
-                <option value="">Monoalfabética</option>                
-                <option value="">Vigenère</option>
+            <input type="text" id="textInput" />
+            <select id="selectOption">
+                <option value="" hidden>Seleccionar</option>
+                <option value="option1">Alura</option>
+                <option value="option2">Transposición</option>
+                <option value="option3">Sustitución</option>
+                <option value="option4">César</option>
+                <option value="option5">Monoalfabética</option>
+                <option value="option6">Vigenère</option>
             </select>
-            <input type="text" class="salida">
-            <button>Encriptar!</button>
+            <button id="submitButton">Encriptar!</button>
+            <p id="outputField"></p>
         </main>
         <footer class="footer">
-            <p>Más información en <a href="https://www.epsilones.com/paginas/historias/historias-015-criptografia-metodosclasicos.html">Epsilones.com</a></p>
+            <p>Más información en <a
+                    href="https://www.epsilones.com/paginas/historias/historias-015-criptografia-metodosclasicos.html">Epsilones.com</a>
+            </p>
         </footer>
     </header>
+    <script src="script.js"></script>
 </body>
+
 </html>
