@@ -1,3 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;    
+}
+
+/* Body */
+
+
+
+/* Header */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -22,4 +33,42 @@
 .nav-links li a {
     text-decoration: none;
     color: #333;
+}
+
+/* Main */
+
+main {
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;    
+}
+
+.putIn, .putOut {  
+    display: flex; 
+    align-items:center !important; 
+    width: 400px;
+    height: 500px;
+    border-radius: 25px;
+    padding: 17px;
+}
+
+.wrappapport {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.elSelect {
+    width: 250px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: lightslategrey;
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
 }
