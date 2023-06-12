@@ -1,10 +1,10 @@
-const inputField = document.getElementById('inputField');
+const inputField = document.getElementById('textInput');
 const selectOption = document.getElementById('selectOption');
 const submitButton = document.getElementById('submitButton');
 const outputField = document.getElementById('outputField');
 
 submitButton.addEventListener('click', () => {
-    const inputValue = textInput.value.toLowerCase().split("");
+    const inputValue = inputField.value.toLowerCase().split("");
     const selectedOption = selectOption.value;
     let outputValue = '';
 
@@ -20,12 +20,13 @@ submitButton.addEventListener('click', () => {
 });
 
 function processOption1(inputValue) {
-    return inputValue;
-    // if (inputValue.length >= 5) {
-    //     return 'El campo es más largo que 5';
-    // } else {
-    //     return 'El campo es más corto que 5';
-    // }
+    let convertedText = '';
+    for (var i = 0; i < inputValue.length; i++) {
+        var charCode = inputValue[i].charCodeAt(0);
+        convertedText += String.fromCharCode(charCode + 3);
+        // console.log(`Código ASCII de ${inputValue[i]}: ${charCode}. Código encriptado: ${charCode+3}`);
+    }
+    return convertedText;
 }
 
 function processOption2(inputValue) {
