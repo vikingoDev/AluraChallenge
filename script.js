@@ -23,8 +23,7 @@ function processOption1(inputValue) {
     let convertedText = '';
     for (var i = 0; i < inputValue.length; i++) {
         var charCode = inputValue[i].charCodeAt(0);
-        convertedText += String.fromCharCode(charCode + 3);
-        // console.log(`Código ASCII de ${inputValue[i]}: ${charCode}. Código encriptado: ${charCode+3}`);
+        convertedText += String.fromCharCode(charCode + 3);        
     }
     return convertedText;
 }
